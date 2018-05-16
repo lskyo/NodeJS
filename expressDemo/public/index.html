@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lskyo</title>
+</head>
+<body>
+	<h1>Get Test</h1>
+	<form action="http://localhost:80/process_get" method="GET">
+		First Name: <input type="text" name="first_name"><br>
+		Last Name: <input type="text" name="last_name">
+		<input type="submit" value="Submit">
+	</form>
+	<br><br>
+	<h1>Post Test</h1>
+	<form action="/process_post" method="POST">
+		First Name: <input type="text" name="first_name"><br>
+		Last Name: <input type="text" name="last_name">
+		<input type="submit" value="Submit">
+	</form>
+	<br><br>
+	<h1>Upload Test</h1>
+	<form action="/file_upload" method="POST" enctype="multipart/form-data">
+		<input type="file" name="image" size="50"><br>
+		<input type="submit" value="上传文件">
+	</form>
+</body>
+</html>
